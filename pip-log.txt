@@ -1,0 +1,19 @@
+Downloading/unpacking sqlite3
+  Getting page http://pypi.python.org/simple/sqlite3
+  Could not fetch URL http://pypi.python.org/simple/sqlite3: HTTP Error 404: Not Found (sqlite3 does not have any releases)
+  Will skip URL http://pypi.python.org/simple/sqlite3 when looking for download links for sqlite3
+  Getting page http://pypi.python.org/simple/
+  URLs to search for versions for sqlite3:
+  Could not find any downloads that satisfy the requirement sqlite3
+No distributions at all found for sqlite3
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 408, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1750, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1029, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for sqlite3

@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Art Events</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+  <h1>Galleries and Spaces</h1>
+  </div>
+  {% for venue in venues %}
+    <div>
+      <h3>{{ venue.name }}</h3>
+      <p>
+        {{ venue.city }}, {{ venue.state }}<br/>
+        <a href="{{ venue.url }}">Website</a>
+      </p>
+    </div>
+  {% endfor %}
+</div>
